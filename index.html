@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UBS Group AG Stock Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="left-header">
+            <img src="ubs_logo.png" alt="Company Logo" id="companyLogo">
+            <span id="companyNameLabel">UBS</span>
+        </div>
+        <h2 id="profileTitle">Investment Profile</h2>
+    </div>
+    <div id="stockProfile">
+        <h1>Stock Profile: UBS Group AG</h1>
+        <div id="errorContainer" style="color: red; display: none;"></div>
+        <table>
+            <tbody>
+                <tr><th>Company Name</th><td id="companyName"></td></tr>
+                <tr><th>Ticker Symbol</th><td id="tickerSymbol"></td></tr>
+                <tr><th>Market Capitalisation</th><td id="marketCap"></td></tr>
+                <tr><th>Currency</th><td id="currency"></td></tr>
+                <tr><th>Exchange</th><td id="exchange"></td></tr>
+                <tr><th>52 Week High</th><td id="weekHigh52"></td></tr>
+                <tr><th>52 Week Low</th><td id="weekLow52"></td></tr>
+            </tbody>
+        </table>
+        <div id="infoButtons">
+            <button id="btnDescription">Company Description</button>
+            <button id="btnMoreData">More Data</button>
+            <button id="btnContactUs">Contact Us</button>
+        </div>
+        <div id="displayInfo"></div> <!-- Placeholder for additional information -->
+    </div>
+    <script src="dom.js"></script>
+</body>
+</html>

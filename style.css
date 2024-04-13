@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0 20px;
+    background-color: #f0f0f0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F8D568;
+    color: white;
+    padding: 10px 20px;
+}
+
+.left-header {
+    display: flex;
+    align-items: center;
+}
+
+#companyLogo {
+    height: 60px;
+    background: #F8D568;
+}
+
+#companyNameLabel {
+    color: red;
+    font-family: 'Arial', sans-serif;
+    font-size: 28px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+#profileTitle {
+    font-size: 24px;
+    margin: 0;
+}
+
+#stockProfile {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+table {
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;
+    margin-left: 0;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+th:first-child, td:first-child {
+    width: 40%; /* Standardize the first column width */
+}
+
+#infoButtons {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+#infoButtons button {
+    margin-right: 10px;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#infoButtons button:hover {
+    background-color: #f0f0f0;
+}
+
+#infoButtons button.active, #infoButtons button:active {
+    background-color: #F8D568;
+    color: white;
+    border-color: #F8D568;
+}
+
+@media (max-width: 600px) {
+    #infoButtons {
+        flex-direction: column;
+    }
+
+    #infoButtons button {
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    table {
+        max-width: none;
+    }
+}
+
+.data-table {
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.data-table th, .data-table td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.data-table th {
+    background-color: #f2f2f2;
+}
