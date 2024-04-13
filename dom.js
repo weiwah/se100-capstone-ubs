@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function fetchStockData() {
-    const apiKey = 'E434A0SKAUUZ3IE0'; // Replace 'YOUR_API_KEY' with your actual API key
+    const apiKey = 'YOUR_API_KEY'; // Replace 'YOUR_API_KEY' with your actual API key
     const url = `https://www.alphavantage.co/query?function=OVERVIEW&symbol=UBS&apikey=${apiKey}`;
 
     fetch(url)
