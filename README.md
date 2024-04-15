@@ -19,7 +19,7 @@ This project displays a comprehensive profile of UBS Group AG's stock, providing
    - Open `dom.js` and replace `YOUR_API_KEY` with your obtained API key.
 
 3. **Launch Project**:
-   - Open the prohect folder in Visual Studio Code.
+   - Open the project folder in Visual Studio Code.
    - Right click on the 'index.html' file and select 'Show Preview' to view the project in your default web browser.
 
 ## Design Overview
