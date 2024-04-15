@@ -12,26 +12,9 @@ function fetchStockData() {
     const url = `https://www.alphavantage.co/query?function=OVERVIEW&symbol=UBS&apikey=${apiKey}`;
 
     fetch(url)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
+        .then(response => response.json())
         .then(data => {
-            if (!data || Object.keys(data).length === 0) {
-                throw new Error('No data available');
-            }
-            if (data['Note']) {
-                throw new Error('API limit reached. Try again later.');
-            }
             updateDOM(data);
-            document.getElementById('errorContainer').style.display = 'none';
-        })
-        .catch(error => {
-            console.error('Error fetching data: ', error);
-            document.getElementById('errorContainer').textContent = error.message;
-            document.getElementById('errorContainer').style.display = 'block';
         });
 }
 

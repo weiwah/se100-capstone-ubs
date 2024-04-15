@@ -109,20 +109,3 @@ th:first-child, td:first-child {
         max-width: none;
     }
 }
-
-.data-table {
-    width: 100%;
-    max-width: 600px;
-    border-collapse: collapse;
-    margin: 20px 0;
-}
-
-.data-table th, .data-table td {
-    text-align: left;
-    padding: 8px;
-    border-bottom: 1px solid #ddd;
-}
-
-.data-table th {
-    background-color: #f2f2f2;
-}

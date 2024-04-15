@@ -1,28 +1,51 @@
-# se100-capstone-ubs
- # UBS Group AG Stock Profile
+# UBS Group AG Stock Profile
 
-Welcome to the GitHub repository for the UBS Group AG Stock Profile web application. This project utilizes the Alpha Vantage API to fetch and display detailed financial data about UBS Group AG, one of the world's largest banking institutions. The web application provides a dynamic and responsive user interface that is accessible on both desktop and mobile devices.
+This project displays a comprehensive profile of UBS Group AG's stock, providing essential financial metrics and company information to aid investors and the public in evaluating its market performance.
 
-## Features
+## Setup Instructions
 
-- **Dynamic Stock Data Fetching**: Uses the Alpha Vantage API to pull real-time data about UBS Group AG, including market capitalization, stock price highs/lows, and other financial metrics.
-- **Responsive Design**: The layout adapts to different screen sizes, ensuring that the webpage is usable on both desktops and mobile devices.
-  - On desktops, the "Company Description", "More Data", and "Contact Us" buttons are displayed in a horizontal layout.
-  - On mobile devices, these buttons switch to a vertical layout for improved accessibility and usability.
-- **Interactive Elements**: Users can interact with the webpage through multiple buttons that display different sets of data:
-  - **Company Description**: Shows detailed information about the company.
-  - **More Data**: Reveals additional financial metrics in a well-organized table format.
-  - **Contact Us**: Provides contact details for further inquiries.
+### Requirements
 
-## Technologies Used
+- Modern web browser (Google Chrome, Mozilla Firefox, Microsoft Edge, Apple Safari)
+- Internet connection
 
-- **HTML**: Structures the webpage.
-- **CSS**: Provides styling to the webpage and ensures responsive design.
-- **JavaScript**: Adds interactivity, handles API data fetching, and dynamically updates the content.
+### Local Deployment
 
-### Prerequisites
+1. **Download and Extract**:
+   - Download the project ZIP file and extract its contents to your preferred directory.
 
-- A modern web browser that supports HTML5, CSS3, and JavaScript.
-- A text editor (VSCode) to edit and view the code.
+2. **API Key Configuration**:
+   - Obtain an API key from (https://www.alphavantage.co/support/#api-key).
+   - Open `dom.js` and replace `YOUR_API_KEY` with your obtained API key.
 
+3. **Launch Project**:
+   - Open the prohect folder in Visual Studio Code.
+   - Right click on the 'index.html' file and select 'Show Preview' to view the project in your default web browser.
 
+## Design Overview
+
+### Styling Choices
+
+- Utilized Flexbox for a flexible and adaptive layout across different screen sizes.
+- Media queries ensure that the webpage is accessible on device of all sizes. The information button ('#infoButtons) are displayed horizontally on dekstops and stacked vertically on mobile devices to maximize space efficiency and usability.
+- Applied a neutral color palette with a highlight of yellow to symbolize optimism and clarity, which aligns with financial growth and stability.
+- Chose Arial for its readability and professional appearance in digital formats.
+
+### JavaScript Functionalities
+
+- **Data Fetching**: Dynamically retrieves stock data from the Alpha Vantage API, ensuring updated and accurate information.
+- **Interactive Elements**: Implements buttons that display additional data without reloading the page, enhancing user interaction.
+
+## File Structure
+
+- `index.html`: Contains the HTML structure.
+- `style.css`: Provides styling for the webpage.
+- `dom.js`: Manages data fetching, DOM updates, and interactive behaviors.
+- `README.md`: Guides users through setup, features, and project structure.
+
+## Additional Notes
+
+- The Alpha Vantage API has call limits which may restrict frequent data fetching.
+- Future iterations could introduce caching to minimize API calls and incorporate graphical displays of stock trends for enhanced user engagement.
+
+For more information or support, please reach out to the project team via the contact details provided on the webpage.
